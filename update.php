@@ -50,7 +50,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         
         $sql = "SELECT * FROM hrbpconnect WHERE EMPLOYEE_ID = ?";
         if($stmt = mysqli_prepare($link, $sql)){
-            mysqli_stmt_bind_param($stmt, "i", $param_id);
+            mysqli_stmt_bind_param($stmt, "s", $param_id);
             
             $param_id = $id;
             
