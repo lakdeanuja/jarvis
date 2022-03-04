@@ -15,6 +15,9 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 
     
     $salary = trim($_POST["rk"]);
+ 
+     $salary = str_replace("'","\'",$salary);
+
 
     // echo $name,$address,$salary;
 
