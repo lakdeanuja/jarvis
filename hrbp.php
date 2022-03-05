@@ -137,7 +137,22 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                         // echo "tod null";
                        $username=  $_SESSION["username"];
+
+                       $admin = "admin@nseit.com";
+                       if(strcmp($username,$admin)){
+
                         $sql = "SELECT * from hrbpconnect  WHERE HRBP_Email = '$username'  ORDER BY LWD DESC ";
+
+
+
+                       }
+
+                       else{
+                        $sql = "SELECT * from hrbpconnect ORDER BY LWD DESC ";
+
+
+                       }
+                       
 
 
                     }

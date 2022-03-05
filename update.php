@@ -16,6 +16,11 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     
     $salary = trim($_POST["rk"]);
 
+    $salary = str_replace("'","\'",$salary);
+
+    echo $salary;
+
+
     // echo $name,$address,$salary;
 
     $link = mysqli_connect("localhost", "root", "", "jarvis");
