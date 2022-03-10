@@ -29,6 +29,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </p>
 
     <a href="hrbp.php" class="btn btn-warning">Proceed to Attrition DashBoard</a>
+    <a href="bgv/dashboard.php" class="btn btn-warning">Proceed to BGV DashBoard</a>
+
 
 </body>
 </html>

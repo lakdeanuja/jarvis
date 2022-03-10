@@ -1,27 +1,28 @@
 <?php 
 session_start();
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
-}
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        header("location: login.php");
+        exit;
+    }
+
 
                     require_once "config.php";
                     ini_set('log_errors','Off');
 
 
-// if(isset($_POST['search'])){
+    // if(isset($_POST['search'])){
 
 
 
-//     $fromd =  $_POST['from'];
-//     $tod =  $_POST['to'];
+    //     $fromd =  $_POST['from'];
+    //     $tod =  $_POST['to'];
 
 
-//     $query= mysqli_query($link, "SELECT * from hrbpconnect WHERE LWD  BETWEEN '$fromd' AND '$tod' ORDER BY LWD DESC");
-//     $count = mysqli_num_rows($query);
-//     echo $count;
+    //     $query= mysqli_query($link, "SELECT * from hrbpconnect WHERE LWD  BETWEEN '$fromd' AND '$tod' ORDER BY LWD DESC");
+    //     $count = mysqli_num_rows($query);
+    //     echo $count;
 
-// }
+    // }
 ?>
 
 
