@@ -13,37 +13,34 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 else {
 
-    if($_SESSION["roles"] == 5){
+    if ($_SESSION["roles"] == 3){
+
+               header("location: bgvview.php");
     
-        relax();
-    }
+   }
 
-    else {
+    // if($_SESSION["roles"] == 5){
+    
+    //     relax();
+    // }
 
-        if ($_SESSION["roles"] == 1){
-
-            echo "you are not allowed to view this page!! return to attrition dashboard!!" ; 
-
-
-
-        }
+    // else {
 
 
+    //     if ($_SESSION["roles"] == 2){
 
-        if ($_SESSION["roles"] == 2){
+    //         header("location: rview.php");
 
-            header("location: rview.php");
+    //     }
 
-        }
+    //     elseif ($_SESSION["roles"] == 3){
 
-        elseif ($_SESSION["roles"] == 3){
+    //         header("location: bgvview.php");
 
-            header("location: bgvview.php");
+    //     }
+    //     // echo $roles;
 
-        }
-        // echo $roles;
-
-    }
+    // }
 }
 
                     require_once "../config.php";
@@ -95,13 +92,15 @@ else {
         });
     </script>
 </head>
+
+
 <body>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="mt-5 mb-3 clearfix">
-                        <h2 class="pull-left">BGV Dashboard</h2>
+                        <h2 class="pull-left">BGV Dashboard - Recruiters</h2>
                         <a href="../logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
 
                         <!-- <a href="create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Employee</a> -->
@@ -197,41 +196,35 @@ else {
                                         // echo "<th>#</th>";
                                         echo "<th>Employee Code</th>";
 
-                                        echo "<th>Offer Date</th>";
-                                        echo "<th>Aadhar Number</th>";
-                                        echo "<th>PAN Number </th>";
                                         echo "<th>Offer Status </th>";
                                         echo "<th>Joining Status </th>";
-                                        echo "<th>Employeent Status Status </th>";
+                                        echo "<th>Employeent  Status </th>";
 
                                         echo "<th>Employee Name </th>";
 
-                                        echo "<th>Type of Hire </th>";
                                         echo "<th> Recruiter Name </th>";
-                                        echo "<th> Department </th>";
-                                        echo "<th> Client </th>";
                                         echo "<th> DOJ </th>";
                                         echo "<th> Reporting Manager </th>";
                                         echo "<th> Delivery Head  </th>";
 
                                         echo "<th> Documentation Status </th>";
                                         echo "<th> Documentation Remarks </th>";
-                                        echo "<th> BGV Initiation Date </th>";
-                                        echo "<th> Vendor Reference No. </th>";
+                                        // echo "<th> BGV Initiation Date </th>";
+                                        // echo "<th> Vendor Reference No. </th>";
 
-                                        echo "<th> BGV Status </th>";
-                                        echo "<th> Vendor Name </th>";
+                                        // echo "<th> BGV Status </th>";
+                                        // echo "<th> Vendor Name </th>";
 
-                                        echo "<th> BGV TAT </th>";
+                                        // echo "<th> BGV TAT </th>";
 
-                                        echo "<th> BGV Closure Date </th>";
+                                        // echo "<th> BGV Closure Date </th>";
 
-                                        echo "<th> BGV Report Status (R/G/O) </th>";
-                                        echo "<th> BGV Ageing 
-                                        </th>";
+                                        // echo "<th> BGV Report Status (R/G/O) </th>";
+                                        // echo "<th> BGV Ageing 
+                                        // </th>";
 
 
-                                        echo "<th> Update - Admin </th>";
+                                        echo "<th> Update - Recruiter </th>";
 
 
 
@@ -250,32 +243,32 @@ else {
                                     echo "<tr>";
                                         echo "<td>" . $row['Emp_Id'] . "</td>";
 
-                                        echo "<td>" . $row['Offer_Date'] . "</td>";
-                                        echo "<td>" . $row['Aadhar'] . "</td>";
-                                        echo "<td>" . $row['PAN'] . "</td>";
+                                        // echo "<td>" . $row['Offer_Date'] . "</td>";
+                                        // echo "<td>" . $row['Aadhar'] . "</td>";
+                                        // echo "<td>" . $row['PAN'] . "</td>";
                                         echo "<td>" . $row['Offer_Status'] . "</td>";
                                         echo "<td>" . $row['Joining_status'] . "</td>";
 
                                         echo "<td>" . $row['Employement_Status'] . "</td>";
                                         echo "<td>" . $row['Employee Name'] . "</td>";
-                                        echo "<td>" . $row['Type_of_Hire'] . "</td>";
+                                        // echo "<td>" . $row['Type_of_Hire'] . "</td>";
                                         echo "<td>" . $row['Recruiter_Name'] . "</td>";
-                                        echo "<td>" . $row['Dept'] . "</td>";
-                                        echo "<td>" . $row['Client'] . "</td>";
+                                        // echo "<td>" . $row['Dept'] . "</td>";
+                                        // echo "<td>" . $row['Client'] . "</td>";
                                         echo "<td>" . $row['DOJ'] . "</td>";
                                         echo "<td>" . $row['RM'] . "</td>";
                                         echo "<td>" . $row['DH'] . "</td>";
                                         echo "<td>" . $row['Documentation_status'] . "</td>";
                                         echo "<td>" . $row['Documentation_remarks'] . "</td>";
 
-                                        echo "<td>" . $row['BGV_initiation_Date'] . "</td>";
-                                        echo "<td>" . $row['Vendor_ref_No'] . "</td>";
-                                        echo "<td>" . $row['BGV_status'] . "</td>";
-                                        echo "<td>" . $row['Vendor_Name'] . "</td>";
-                                        echo "<td>" . $row['TAT'] . "</td>";
-                                        echo "<td>" . $row['BGV_closure_Date'] . "</td>";
-                                        echo "<td>" . $row['BGV_Report_StatusRGO'] . "</td>";
-                                        echo "<td>" . $row['BGV_Ageing'] . "</td>";
+                                        // echo "<td>" . $row['BGV_initiation_Date'] . "</td>";
+                                        // echo "<td>" . $row['Vendor_ref_No'] . "</td>";
+                                        // echo "<td>" . $row['BGV_status'] . "</td>";
+                                        // echo "<td>" . $row['Vendor_Name'] . "</td>";
+                                        // echo "<td>" . $row['TAT'] . "</td>";
+                                        // echo "<td>" . $row['BGV_closure_Date'] . "</td>";
+                                        // echo "<td>" . $row['BGV_Report_StatusRGO'] . "</td>";
+                                        // echo "<td>" . $row['BGV_Ageing'] . "</td>";
                                         // echo "<td>" . $row['Documentation_remarks'] . "</td>";
                                         // echo "<td>" . $row['Documentation_remarks'] . "</td>";
                                         // echo "<td>" . $row['Documentation_remarks'] . "</td>";
@@ -295,7 +288,7 @@ else {
 
                                         echo "<td>";
                                             // echo '<a href="read.php?EMPLOYEE_ID='. $row['EMPLOYEE_ID'] .'" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
-                                            echo '<a href="updatedashboardadmin.php?id='. $row['Emp_Id'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-comment"></span></a>';
+                                            echo '<a href="updateddashboardrecruiter.php?id='. $row['Emp_Id'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-comment"></span></a>';
                                             // echo '<a href="delete.php?EMPLOYEE_ID='. $row['EMPLOYEE_ID'] .'" title="Delete Record" data-toggle="tooltip"><span class="fa fa-trash"></span></a>';
                                         echo "</td>";
                                     echo "</tr>";
@@ -318,4 +311,5 @@ else {
         </div>
     </div>
 </body>
+
 </html>

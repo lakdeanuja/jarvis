@@ -12,38 +12,34 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 }
 
 else {
+    if ($_SESSION["roles"] == 2){
 
-    if($_SESSION["roles"] == 5){
+               header("location: rview.php");
     
-        relax();
-    }
+       }
 
-    else {
+    // if($_SESSION["roles"] == 5){
+    
+    //     relax();
+    // }
 
-        if ($_SESSION["roles"] == 1){
-
-            echo "you are not allowed to view this page!! return to attrition dashboard!!" ; 
-
-
-
-        }
+    // else {
 
 
+    //     if ($_SESSION["roles"] == 2){
 
-        if ($_SESSION["roles"] == 2){
+    //         header("location: rview.php");
 
-            header("location: rview.php");
+    //     }
 
-        }
+    //     elseif ($_SESSION["roles"] == 3){
 
-        elseif ($_SESSION["roles"] == 3){
+    //         header("location: bgvview.php");
 
-            header("location: bgvview.php");
+    //     }
+    //     // echo $roles;
 
-        }
-        // echo $roles;
-
-    }
+    // }
 }
 
                     require_once "../config.php";
@@ -95,13 +91,15 @@ else {
         });
     </script>
 </head>
+
+
 <body>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="mt-5 mb-3 clearfix">
-                        <h2 class="pull-left">BGV Dashboard</h2>
+                        <h2 class="pull-left">BGV Dashboard - BGV Co-ordinator</h2>
                         <a href="../logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
 
                         <!-- <a href="create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Employee</a> -->
@@ -197,19 +195,18 @@ else {
                                         // echo "<th>#</th>";
                                         echo "<th>Employee Code</th>";
 
-                                        echo "<th>Offer Date</th>";
+                                        // echo "<th>Offer Date</th>";
                                         echo "<th>Aadhar Number</th>";
                                         echo "<th>PAN Number </th>";
-                                        echo "<th>Offer Status </th>";
+                                        // echo "<th>Offer Status </th>";
                                         echo "<th>Joining Status </th>";
-                                        echo "<th>Employeent Status Status </th>";
+                                        // echo "<th>Employeent Status </th>";
 
                                         echo "<th>Employee Name </th>";
-
-                                        echo "<th>Type of Hire </th>";
+                                        // echo "<th>Type of Hire </th>";
                                         echo "<th> Recruiter Name </th>";
-                                        echo "<th> Department </th>";
-                                        echo "<th> Client </th>";
+                                        // echo "<th> Department </th>";
+                                        // echo "<th> Client </th>";
                                         echo "<th> DOJ </th>";
                                         echo "<th> Reporting Manager </th>";
                                         echo "<th> Delivery Head  </th>";
@@ -250,18 +247,18 @@ else {
                                     echo "<tr>";
                                         echo "<td>" . $row['Emp_Id'] . "</td>";
 
-                                        echo "<td>" . $row['Offer_Date'] . "</td>";
+                                        // echo "<td>" . $row['Offer_Date'] . "</td>";
                                         echo "<td>" . $row['Aadhar'] . "</td>";
                                         echo "<td>" . $row['PAN'] . "</td>";
-                                        echo "<td>" . $row['Offer_Status'] . "</td>";
+                                        // echo "<td>" . $row['Offer_Status'] . "</td>";
                                         echo "<td>" . $row['Joining_status'] . "</td>";
 
-                                        echo "<td>" . $row['Employement_Status'] . "</td>";
+                                        // echo "<td>" . $row['Employement_Status'] . "</td>";
                                         echo "<td>" . $row['Employee Name'] . "</td>";
-                                        echo "<td>" . $row['Type_of_Hire'] . "</td>";
+                                        // echo "<td>" . $row['Type_of_Hire'] . "</td>";
                                         echo "<td>" . $row['Recruiter_Name'] . "</td>";
-                                        echo "<td>" . $row['Dept'] . "</td>";
-                                        echo "<td>" . $row['Client'] . "</td>";
+                                        // echo "<td>" . $row['Dept'] . "</td>";
+                                        // echo "<td>" . $row['Client'] . "</td>";
                                         echo "<td>" . $row['DOJ'] . "</td>";
                                         echo "<td>" . $row['RM'] . "</td>";
                                         echo "<td>" . $row['DH'] . "</td>";
@@ -318,4 +315,5 @@ else {
         </div>
     </div>
 </body>
+
 </html>
