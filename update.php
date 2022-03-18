@@ -145,7 +145,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                                 <option value="Higher Studies">Higher Studies</option>
                                 <option value="Death Case">Death Case</option>
                                 <option value="Change in career path">Change in career path</option>
-                                <option value="Contract End">Contract End   </option>
+                                <option value="Contract End">Contract End  </option>
                                 <!-- <option value="Personal Reason">Workstress</option> -->
                                 <!-- <option value="Workstress">Workstress</option> -->
                                 <!-- <option value="Workstress">Workstress</option> -->
