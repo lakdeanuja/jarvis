@@ -117,10 +117,10 @@
                             echo "</table>";
                             mysqli_free_result($result);
                         } else{
-                            echo '<div class="alert alert-danger"><em>Please Select A Date range.</em></div>';
+                            echo '<div class="alert alert-danger"><em>No Combination Found , Please contact the admin to create role..</em></div>';
                         }
                     } else{
-                        echo "Oops! Something went wrong. Please try again later.";
+                        echo "No Combination Found , Please contact the admin to create role..";
                     }
  
                     // Close connection
