@@ -98,9 +98,9 @@
           </h1><br><br>
         
           <div class="hero_btn-continer">
-            <a href="http://localhost/jarvis/rolefinder/" class="call_to-btn btn_white-border">
+            <a href="" class="call_to-btn btn_white-border">
               <span>
-                BACK
+                BACK TO HOME
               </span>
               <img src="images/prev.png" alt="">
             </a>
@@ -110,7 +110,7 @@
           <div>
           <!-- </form>  -->
           
-          <div style = "position:relative; left:130px; top:2px; background-color:rgb(255, 255, 255);">
+          <div style = "position:relative; left:180px; top:2px; background-color:rgb(255, 255, 255);">
           <?php
           // Include config file
           require_once "../config.php";
@@ -138,15 +138,14 @@
       
       
           // Attempt select query execution
-         
           if($result = mysqli_query($link, $sql)){
-              if(mysqli_num_rows($result) > 0)
-              {   
-                  echo '<table class="styled-table table table-bordered table-stripped table-hover">';
+              if(mysqli_num_rows($result) > 0){   
+                  echo '<table class="styled-table">';
                       echo "<thead>";
                           echo "<tr>";
                               // echo "<th>#</th>";
                               echo "<th>BU</th>";
+
                               echo "<th>Department</th>";
                               echo "<th>Designation</th>";
                               echo "<th>Grade</th>";
@@ -159,7 +158,7 @@
                               echo "<td>" . $row['bu'] . "</td>";
                               echo "<td>" . $row['dept'] . "</td>";
                               echo "<td>" . $row['desgn'] . "</td>";
-                              echo "<td >" . $row['grade'] . "</td>";
+                              echo "<td>" . $row['grade'] . "</td>";
                               echo "<td>" . $row['role'] . "</td>";
 
                           echo "</tr>";
