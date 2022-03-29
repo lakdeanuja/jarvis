@@ -71,12 +71,12 @@ session_start();
     <div class="wrapper">
         <div class="container-fluid"><br>
         <img src="images\nseit.png" height="90px" width="80px"><span><img src="images\nseits.png" height="80px" width="90px"></span>
-        <h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        <h2>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
         
-        <b><font color="#0056b3">ATTRITION DASHBOARD</font></b></h3>
+        <b><font color="#0056b3">ATTRITION DASHBOARD</font></b></h2>
             <div class="row">
                 <div class="col-md-12">
                 <form method="post">
