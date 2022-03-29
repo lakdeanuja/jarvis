@@ -25,34 +25,8 @@ session_start();
     // }
 ?>
 
-<<<<<<< Updated upstream
-<div class="top_container">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-custom navbar-mainbg">
-
-          <a class="navbar-brand navbar-logo" href="#"><img src="rolefinder\images\nseit.png" alt=""><span><img src="rolefinder\images\NSE.png" alt="" height="70px" width="180px"></span></a>
-          <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars text-white"></i>
-          </button>
-          <div class=" navbar" id="navbarSupportedContent">
-
-            <!--a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>HOME</a>
-            <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>HOME</a-->
-
-          </div>
-      </nav>
-          
-      </div>
-    </header><br><br>
-    <section class="hero_section ">
-      <div class="hero-container container">
-      <!DOCTYPE html>
-=======
 
 <!DOCTYPE html>
->>>>>>> Stashed changes
 
 
 <html lang="en">
@@ -62,13 +36,8 @@ session_start();
             border: none;
             text-decoration: none;
             color: white;
-<<<<<<< Updated upstream
-            padding: 10px 10px;
-            margin: 10px 10px;
-=======
             padding: 5px 5px;
             margin: 5px 5px;
->>>>>>> Stashed changes
             cursor: pointer;
          }
       </style>
@@ -100,24 +69,16 @@ session_start();
 </head>
 <body>
     <div class="wrapper">
-<<<<<<< Updated upstream
-        <div class="container-fluid">
-=======
         <div class="container-fluid"><br>
-        <img src="image\nseit.png" height="90px" width="80px"><span><img src="image\NSE.png" height="80px" width="90px"></span>
+        <img src="images\nseit.png" height="90px" width="80px"><span><img src="images\nseits.png" height="80px" width="90px"></span>
         <h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
         
         <b><font color="#0056b3">ATTRITION DASHBOARD</font></b></h3>
->>>>>>> Stashed changes
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mt-5 mb-3 clearfix">
-                        <h2 class="pull-left">Attrition Dashboard</h2>
-                        <!-- <a href="create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Employee</a> -->
-                    </div>
                 <form method="post">
                 <label for="lwd">From </label>
                 <input type="date"  value="2020-01-01"  name="from">
@@ -299,44 +260,5 @@ session_start();
             </div>        
         </div>
     </div>
-
-
-
-
-
-
-      
-        </div>
-      </div>
-    </section>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
