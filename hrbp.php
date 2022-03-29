@@ -92,7 +92,7 @@ session_start();
 
 
                 <input type="text"  placeholder="Enter Employee Name"  name="ename">
-                        <!-- <a ><i class="fa fa-search"></i> Search</a> -->
+                        < <a ><i class="fa fa-search"></i> Search</a> -->
                         <!-- <input type="submit" name="sname" value="Show Records" > -->
 
 
