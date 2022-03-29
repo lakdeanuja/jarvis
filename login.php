@@ -108,7 +108,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body{background: #D5D6EA;font: 14px sans-serif; }
+        body {
+  background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+}
         .wrapper{ position:center; width: 360px; padding: 20px; }
         
 }
@@ -118,8 +125,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <br>
     </br>
     <div style="background: #ffff; margin: auto; width: 400px;"
+    
     <div style="margin: auto; width: 220px;class="wrapper">
-    <img src="image\NseLogo.jpg" alt="nseit" width="250" height="130">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image\NseLogo.jpg" alt="nseit" width="250" height="130">
         <h1 align="center" style="color:#151B8D"><b>Login</b></h1>
         <p align="center"><b>Please fill in your credentials to login.</b></p>
 
@@ -148,5 +156,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </form>
     </div>
     </div>
+    
 </body>
 </html>
