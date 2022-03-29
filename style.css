@@ -9,11 +9,16 @@
 
   .styled-table {
     border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
+    margin: 20px 0;
+    font-size: 0.7em;
     font-family: sans-serif;
+<<<<<<< Updated upstream
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+=======
+    min-width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+>>>>>>> Stashed changes
 }
 .styled-table thead tr {
   background-color: #009879;
@@ -23,7 +28,11 @@
 
 .styled-table th,
 .styled-table td {
+<<<<<<< Updated upstream
     padding: 12px 15px;
+=======
+    padding: 5px 5px;
+>>>>>>> Stashed changes
 }
 
 

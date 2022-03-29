@@ -26,6 +26,10 @@ session_start();
 ?>
 
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 <!DOCTYPE html>
 
 
@@ -36,8 +40,13 @@ session_start();
             border: none;
             text-decoration: none;
             color: white;
+<<<<<<< Updated upstream
             padding: 20px 20px;
             margin: 20px 20px;
+=======
+            padding: 5px 5px;
+            margin: 5px 5px;
+>>>>>>> Stashed changes
             cursor: pointer;
          }
       </style>
@@ -69,13 +78,16 @@ session_start();
 </head>
 <body>
     <div class="wrapper">
-        <div class="container-fluid">
+        <div class="container-fluid"><br>
+        <img src="image\nseit.png" height="80px" width="80px"><span><img src="image\NSE.png" height="80px" width="80px"></span>
+        <h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        
+        <b><font color="#0056b3">ATTRITION DASHBOARD</font></b></h3>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mt-5 mb-3 clearfix">
-                        <h2 class="pull-left">Attrition Dashboard</h2>
-                        <!-- <a href="create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Employee</a> -->
-                    </div>
                 <form method="post">
                 <label for="lwd">From </label>
                 <input type="date"  value="2020-01-01"  name="from">
