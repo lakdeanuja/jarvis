@@ -50,7 +50,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <body>
     <header>
        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-       <a href="#home"><img class="logo" src="image\NseLogo.jpg" width="250" height="130" alt="logo" data-rjs="2"></a>
+       <a href="#home"><img class="logo" src="images\mainnselogo.jpg" width="250" height="130" alt="logo" data-rjs="2"></a>
        </nav>
     </header>
 <div class="logo-container">
