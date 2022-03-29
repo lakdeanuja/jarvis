@@ -200,11 +200,6 @@ session_start();
 
                                         echo "<th> Edit </th>";
 
-
-
-
-
-
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
@@ -226,16 +221,6 @@ session_start();
                                         echo "<td>" . $row['HRBP_Nomenclature'] . "</td>";
                                         echo "<td>" . $row['HRBP_Bucketing'] . "</td>";
                                         echo "<td>" . $row['Remarks'] . "</td>";
-
-
-
-
-
-
-
-
-
-
                                         echo "<td>";
                                             // echo '<a href="read.php?EMPLOYEE_ID='. $row['EMPLOYEE_ID'] .'" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
                                             echo '<a href="update.php?id='. $row['EMPLOYEE_ID'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-comment"></span></a>';
