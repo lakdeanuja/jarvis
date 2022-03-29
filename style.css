@@ -12,14 +12,9 @@
     margin: 20px 0;
     font-size: 0.7em;
     font-family: sans-serif;
-<<<<<<< Updated upstream
     min-width: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     border: 2px solid #ffffff;
-=======
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
->>>>>>> Stashed changes
 }
 
 .styled-table thead tr {
@@ -30,11 +25,7 @@
 
 .styled-table th,
 .styled-table td {
-<<<<<<< Updated upstream
     padding: 8px 8px;
-=======
-    padding: 12px 15px;
->>>>>>> Stashed changes
 }
 
 
