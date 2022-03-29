@@ -176,7 +176,7 @@ session_start();
                     // Attempt select query execution
                     if($result = mysqli_query($link, $sql)){
                         if(mysqli_num_rows($result) > 0){
-                            echo '<table class="styled-table">';
+                            echo '<table class="styled-table" class="feeze-table">';
                                 echo "<thead>";
                                     echo "<tr>";
                                         // echo "<th>#</th>";
