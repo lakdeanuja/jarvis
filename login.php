@@ -127,7 +127,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div style="background: #ffff; margin: auto; width: 400px;"
     
     <div style="margin: auto; width: 220px;class="wrapper">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image\NseLogo.jpg" alt="nseit" width="250" height="130">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\NseLogo.jpg" alt="nseit" width="250" height="130">
         <h1 align="center" style="color:#151B8D"><b>Login</b></h1>
         <p align="center"><b>Please fill in your credentials to login.</b></p>
 
