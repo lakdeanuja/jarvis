@@ -25,6 +25,67 @@ session_start();
     // }
 ?>
 
+<div class="top_container">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-custom navbar-mainbg">
+
+          <a class="navbar-brand navbar-logo" href="#"><img src="images/nseit.png" alt=""><span><img src="images/NSE.png" alt="" height="70px" width="180px"></span></a>
+          <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-white"></i>
+          </button>
+          <div class=" navbar" id="navbarSupportedContent">
+
+            <!--a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>HOME</a>
+            <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>HOME</a-->
+
+          </div>
+      </nav>
+          
+      </div>
+    </header><br><br>
+    <section class="hero_section ">
+      <div class="hero-container container">
+      
+        <div class="hero_img-container">
+          <div>
+         
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!DOCTYPE html>
 
