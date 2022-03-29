@@ -47,47 +47,7 @@ session_start();
     </header><br><br>
     <section class="hero_section ">
       <div class="hero-container container">
-      
-        <div class="hero_img-container">
-          <div>
-         
-
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
+      <!DOCTYPE html>
 
 
 <html lang="en">
@@ -318,5 +278,44 @@ session_start();
             </div>        
         </div>
     </div>
+
+
+
+
+
+
+      
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
