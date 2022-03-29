@@ -32,12 +32,12 @@ session_start();
 <html lang="en">
 <style>
          input[type=submit] {
-            background-color: #009879;
+            background-color: #0056b3;
             border: none;
             text-decoration: none;
             color: white;
-            padding: 20px 20px;
-            margin: 20px 20px;
+            padding: 10px 10px;
+            margin: 10px 10px;
             cursor: pointer;
          }
       </style>
