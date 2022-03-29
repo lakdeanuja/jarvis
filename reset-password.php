@@ -107,7 +107,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div id="rcorners2">
     <div style="margin: auto; width: 350px;class="wrapper">
     <div style="margin: auto; width: 250px;class="wrapper">
-   <img src="image\NseLogo.jpg" alt="nseit" width="250" height="130"></div>
    <img src="images\mainnselogo.jpg" alt="nseit" width="250" height="130"></div>
     <div class="wrapper">
     <h2 align="center" style="color:#151B8D"><b>Reset Password</b></h2>
