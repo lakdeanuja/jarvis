@@ -32,12 +32,12 @@ session_start();
 <html lang="en">
 <style>
          input[type=submit] {
-            background-color: #009879;
+            background-color: #0056b3;
             border: none;
             text-decoration: none;
             color: white;
-            padding: 20px 20px;
-            margin: 20px 20px;
+            padding: 5px 5px;
+            margin: 5px 5px;
             cursor: pointer;
          }
       </style>
@@ -69,13 +69,16 @@ session_start();
 </head>
 <body>
     <div class="wrapper">
-        <div class="container-fluid">
+        <div class="container-fluid"><br>
+        <img src="images\nseit.png" height="90px" width="80px"><span><img src="images\nseits.png" height="80px" width="90px"></span>
+        <h2>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; 
+        
+        <b><font color="#0056b3">ATTRITION DASHBOARD</font></b></h2>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mt-5 mb-3 clearfix">
-                        <h2 class="pull-left">Attrition Dashboard</h2>
-                        <!-- <a href="create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Employee</a> -->
-                    </div>
                 <form method="post">
                 <label for="lwd">From </label>
                 <input type="date"  value="2020-01-01"  name="from">
@@ -89,7 +92,7 @@ session_start();
 
 
                 <input type="text"  placeholder="Enter Employee Name"  name="ename">
-                        <!-- <a ><i class="fa fa-search"></i> Search</a> -->
+                        < <a ><i class="fa fa-search"></i> Search</a> -->
                         <!-- <input type="submit" name="sname" value="Show Records" > -->
 
 
@@ -173,7 +176,7 @@ session_start();
                     // Attempt select query execution
                     if($result = mysqli_query($link, $sql)){
                         if(mysqli_num_rows($result) > 0){
-                            echo '<table class="styled-table">';
+                            echo '<table class="styled-table" class="feeze-table">';
                                 echo "<thead>";
                                     echo "<tr>";
                                         // echo "<th>#</th>";
@@ -197,11 +200,6 @@ session_start();
 
                                         echo "<th> Edit </th>";
 
-
-
-
-
-
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
@@ -223,16 +221,6 @@ session_start();
                                         echo "<td>" . $row['HRBP_Nomenclature'] . "</td>";
                                         echo "<td>" . $row['HRBP_Bucketing'] . "</td>";
                                         echo "<td>" . $row['Remarks'] . "</td>";
-
-
-
-
-
-
-
-
-
-
                                         echo "<td>";
                                             // echo '<a href="read.php?EMPLOYEE_ID='. $row['EMPLOYEE_ID'] .'" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
                                             echo '<a href="update.php?id='. $row['EMPLOYEE_ID'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-comment"></span></a>';
