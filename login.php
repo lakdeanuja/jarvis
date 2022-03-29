@@ -116,6 +116,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   font-family: "Open Sans", sans-serif;
   color: #333333;
 }
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #ffff;
+  padding: 20px; 
+  width: 200px;
+  height: 500px;  
+}
         .wrapper{ position:center; width: 360px; padding: 20px; }
         
 }
@@ -124,19 +131,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
     <br>
     </br>
-    <div style="background: #ffff; margin: auto; width: 400px;"
-    
-    <div style="margin: auto; width: 220px;class="wrapper">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image\NseLogo.jpg" alt="nseit" width="250" height="130">
+    <div style="background: #ffff; margin: auto; width: 400px;" 
+    <div id="rcorners2">
+    <div style="margin: auto; width: 240px;class="wrapper">
+    <img src="images\mainnselogo.jpg" alt="nseit" width="250" height="130">
         <h1 align="center" style="color:#151B8D"><b>Login</b></h1>
-        <p align="center"><b>Please fill in your credentials to login.</b></p>
+        <!-- <p><b>Please fill in your credentials to login.</b></p> -->
 
         <?php 
         if(!empty($login_err)){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
         }        
         ?>
-
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label><b>&nbsp;&nbsp;Email</b></label>
@@ -149,11 +155,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group" align="center">
-                <input type="submit" class="btn btn-primary" value="Login">
+                <input type="submit" class="btn btn-danger" value="Login">
             </div>
             <p align="center">Don't have an account? <a href="register.php">Sign up now</a>.</p>
             &nbsp;&nbsp;
         </form>
+    </div>
     </div>
     </div>
     

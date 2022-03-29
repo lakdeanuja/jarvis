@@ -107,17 +107,28 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
   color: #333333;
+}
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #ffff;
+  padding: 20px; 
+  width: 200px;
+  height:   600px;  
+}
         .wrapper{ position:center; width: 360px; padding: 20px; }
+        
+}
     </style>
 </head>
 <body>
     <br>
     </br>
     <div style="background: #ffff; margin: auto; width: 400px;"
-    <div style="margin: auto; width: 220px;class="wrapper">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image\NseLogo.jpg" alt="nseit" width="250" height="130">
+    <div id="rcorners2">
+    <div style="margin: auto; width: 260px;class="wrapper">
+    <img src="images\mainnselogo.jpg" alt="nseit" width="250" height="130">
     <h1 align="center" style="color:#151B8D"><b>Sign Up</b></h1>
-        <p align="center"><b>Please fill this form to create an account.</b></p>
+        <!-- <p align="center"><b>Please fill this form to create an account.</b></p> -->
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>&nbsp;&nbsp;<b>Email</b></label>
@@ -135,12 +146,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group" align="center">
-                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="submit" class="btn btn-danger" value="Submit">
                 <input type="reset" class="btn btn-secondary ml-2" value="Reset">
             </div>
             <p align="center">Already have an account? <a href="login.php">Login here</a>.</p>
             &nbsp;&nbsp;
         </form>
-    </div>    
+    </div>   
+</div> 
+</div>
 </body>
 </html>

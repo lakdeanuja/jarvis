@@ -20,7 +20,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>N. Agenecy</title>
+    <title>nseit</title>
     
     <meta name="description" content="N.Agency - Responisve Landing Page for Agency">
     <meta name="keywords" content="">
@@ -48,26 +48,44 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </style>
 </head>
 <body>
+<!-- <a href="#home"><img class="logo" src="image\NseLogo.jpg" width="250" height="130" alt="logo" data-rjs="2"></a> -->
     <header>
-       <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-       <a href="#home"><img class="logo" src="image\NseLogo.jpg" width="250" height="130" alt="logo" data-rjs="2"></a>
-       </nav>
+       <!-- 
+       <div class="container-fluid"> -->
+   
+ <nav class="navbar navbar-light" style="background-color: #0056b3;">
+  <form class="container-fluid justify-content-start">
+    <a href="#home"><img class="logo" src="mages\mainnselogo.jpg" width="250" height="130" alt="logo" data-rjs="2"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- <ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="nav-link active" href="login.php">LOGIN</a>  
+    </li>
+    </ul> -->
+</form>
+</nav>
     </header>
-<div class="logo-container">
-    <div class="logo-wrap local-scroll">
-        
-    </div>
 </div>
-    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to Jarvis.</h1>
-    <p>
 
-
-        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
-        <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
-    </p>
-
-    <a href="hrbp.php" class="btn btn-warning">Proceed to Attrition DashBoard</a>
-    <a href="bgv/dashboard.php" class="btn btn-warning">Proceed to BGV DashBoard</a>
+    <h1 class="my-2">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to Jarvis.</h1>
+    <table class="table">
+    <tbody>
+    <tr>
+      <td> <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a></td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
 
 
 </body>
