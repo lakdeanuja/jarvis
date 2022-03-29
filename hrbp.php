@@ -31,7 +31,7 @@ session_start();
       <div class="container">
         <nav class="navbar navbar-expand-custom navbar-mainbg">
 
-          <a class="navbar-brand navbar-logo" href="#"><img src="images/nseit.png" alt=""><span><img src="images/NSE.png" alt="" height="70px" width="180px"></span></a>
+          <a class="navbar-brand navbar-logo" href="#"><img src="rolefinder\images\nseit.png" alt=""><span><img src="rolefinder\images\NSE.png" alt="" height="70px" width="180px"></span></a>
           <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars text-white"></i>
           </button>
