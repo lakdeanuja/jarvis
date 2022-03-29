@@ -108,37 +108,61 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
+        body {
+  background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+}
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #ffff;
+  padding: 20px; 
+  width: 200px;
+  height: 500px;  
+}
+        .wrapper{ position:center; width: 360px; padding: 20px; }
+        
+}
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
+    <br>
+    </br>
+    <div style="background: #ffff; margin: auto; width: 400px;" 
+    <div id="rcorners2">
+    <div style="margin: auto; width: 240px;class="wrapper">
+    <img src="images\mainnselogo.jpg" alt="nseit" width="250" height="130">
+        <h1 align="center" style="color:#151B8D"><b>Login</b></h1>
+        <!-- <p><b>Please fill in your credentials to login.</b></p> -->
 
         <?php 
         if(!empty($login_err)){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
         }        
         ?>
-
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
-                <label>Email</label>
+                <label><b>&nbsp;&nbsp;Email</b></label>
                 <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    
             <div class="form-group">
-                <label>Password</label>
+                <label><b>&nbsp;&nbsp;Password</b></label>
                 <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
+            <div class="form-group" align="center">
+                <input type="submit" class="btn btn-danger" value="Login">
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            <p align="center">Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            &nbsp;&nbsp;
         </form>
     </div>
+    </div>
+    </div>
+    
 </body>
 </html>
