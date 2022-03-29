@@ -36,8 +36,13 @@ session_start();
             border: none;
             text-decoration: none;
             color: white;
+<<<<<<< Updated upstream
             padding: 5px 5px;
             margin: 5px 5px;
+=======
+            padding: 20px 20px;
+            margin: 20px 20px;
+>>>>>>> Stashed changes
             cursor: pointer;
          }
       </style>
